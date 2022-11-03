@@ -1,0 +1,163 @@
+:root {
+    --duration: .1s
+}
+
+html {
+    font-size: 20px;
+    overflow-y: hidden;
+}
+
+.fa-github:hover {
+    -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    background:#fff;
+    color:#000;
+    transform: rotate(360deg);
+    background-color: rgb(157, 157, 255);
+}
+
+body{
+    margin: 0;
+
+}
+
+/* .thumbtackhover {
+    -webkit-transition: all var(--duration) linear;
+    -moz-transition: all var(--duration) linear;
+    -o-transition: all var(--duration) linear;
+    transition: all var(--duration) linear;
+    background:#fff;
+    color:#000;
+    background-color: rgb(157, 157, 255);
+}
+
+.squarehover {
+    -webkit-transition: all var(--duration) linear;
+    -moz-transition: all var(--duration) linear;
+    -o-transition: all var(--duration) linear;
+    transition: all var(--duration) linear;
+    background:#fff;
+    color:#000;
+    background-color: rgb(157, 157, 255);
+} */
+
+.mainbody {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    background-color: rgb(157, 157, 255);
+    height: 85vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.header {
+    background-color: rgb(73, 70, 255);
+    height: 4vh;
+    padding: 20px 30px;
+    color: rgb(188, 224, 255);
+    font-size: 40px;
+}
+
+footer {
+    height: 3vh;
+    background-color: rgb(157, 157, 255);
+    text-align: center;
+    top: 2px;
+    font-weight: 700;
+}
+
+.sidebar, .taskbar {
+    background-color: rgb(210, 210, 255);
+    padding: 20px;
+}
+
+
+.newfolderbtn:hover, .newtasksbtn:hover {
+    -webkit-transition: all var(--duration) linear;
+    -moz-transition: all var(--duration) linear;
+    -o-transition: all var(--duration) linear;
+    transition: all var(--duration) linear;
+    transform: scale(1.008);
+    box-shadow: 1px 1px 1px 1px;
+    font-size: 22px;
+}
+
+.newfolderbtn, .newtasksbtn {
+    border-radius: 5px;
+    border: #000 solid 1px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.sidebarfolder, .taskbartasks {
+    margin-top: 15px;
+    border-radius: 5px;
+    border: #000 solid 1px;
+    padding: 15px;
+    height: 69vh;
+    overflow-y: auto;
+}
+
+.folder {
+    height: 30px;
+    margin: 5px 0px;
+}
+
+.folder:hover {
+    -webkit-transition: all var(--duration) linear;
+    -moz-transition: all var(--duration) linear;
+    -o-transition: all var(--duration) linear;
+    transition: all var(--duration) linear;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.focused {
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.focusedtask {
+    background-color: rgb(248, 193, 193);
+    z-index: 2;
+    visibility: visible !important;
+}
+
+.tasklistgeneral{
+    height: 69%;
+    width: 65.3%;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.backgrounddiv {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 60%;
+}
+
+#newtaskwin {
+    position: absolute;
+    height: 30vh;
+    width: 50vw;
+    top: 30%;
+    left: 25%;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+
+.done {
+    opacity: 50%;
+    text-decoration: line-through;
+}
